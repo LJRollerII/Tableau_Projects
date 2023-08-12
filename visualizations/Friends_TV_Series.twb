@@ -1,0 +1,2179 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20232.23.0804.0115                               -->
+<workbook original-version='18.1' source-build='2023.1.2 (20231.23.0511.1508)' source-platform='win' version='18.1' xml:base='https://vizhub' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='FriendsTVSeries_16918198302320' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <style>
+    <style-rule element='gridline'>
+      <format attr='line-visibility' value='off' />
+    </style-rule>
+    <style-rule element='zeroline'>
+      <format attr='line-visibility' value='off' />
+    </style-rule>
+  </style>
+  <datasources>
+    <datasource caption='friends_dataset' inline='true' name='federated.1mg8k940ap4g6a13yljic0834h25' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='friends_dataset' name='textscan.1bd1si00c16xlo11mpz2f0eppz2x'>
+            <connection class='textscan' directory='C:/Users/ljcoo/Coding/Projects/Tableau_Projects/data' filename='friends_dataset.csv' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1bd1si00c16xlo11mpz2f0eppz2x' name='friends_dataset.csv' table='[friends_dataset#csv]' type='table'>
+          <columns character-set='windows-1252' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Episode title' ordinal='0' />
+            <column datatype='string' name='Description' ordinal='1' />
+            <column datatype='integer' name='Season' ordinal='2' />
+            <column datatype='integer' name='Episode ' ordinal='3' />
+            <column datatype='integer' name='Duration in minutes' ordinal='4' />
+            <column datatype='integer' name='Year' ordinal='5' />
+            <column datatype='string' name='Director' ordinal='6' />
+            <column datatype='real' name='Total stars' ordinal='7' />
+            <column datatype='integer' name='Total votes' ordinal='8' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1bd1si00c16xlo11mpz2f0eppz2x' name='friends_dataset.csv' table='[friends_dataset#csv]' type='table'>
+          <columns character-set='windows-1252' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Episode title' ordinal='0' />
+            <column datatype='string' name='Description' ordinal='1' />
+            <column datatype='integer' name='Season' ordinal='2' />
+            <column datatype='integer' name='Episode ' ordinal='3' />
+            <column datatype='integer' name='Duration in minutes' ordinal='4' />
+            <column datatype='integer' name='Year' ordinal='5' />
+            <column datatype='string' name='Director' ordinal='6' />
+            <column datatype='real' name='Total stars' ordinal='7' />
+            <column datatype='integer' name='Total votes' ordinal='8' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[friends_dataset.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;ibm-5348_P100-1997&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Episode title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Episode title]</local-name>
+            <parent-name>[friends_dataset.csv]</parent-name>
+            <remote-alias>Episode title</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[friends_dataset.csv_C1542B1F278348DF98F8233C7C82014F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Description]</local-name>
+            <parent-name>[friends_dataset.csv]</parent-name>
+            <remote-alias>Description</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[friends_dataset.csv_C1542B1F278348DF98F8233C7C82014F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Season</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Season]</local-name>
+            <parent-name>[friends_dataset.csv]</parent-name>
+            <remote-alias>Season</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[friends_dataset.csv_C1542B1F278348DF98F8233C7C82014F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Episode </remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Episode ]</local-name>
+            <parent-name>[friends_dataset.csv]</parent-name>
+            <remote-alias>Episode </remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[friends_dataset.csv_C1542B1F278348DF98F8233C7C82014F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Duration in minutes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Duration in minutes]</local-name>
+            <parent-name>[friends_dataset.csv]</parent-name>
+            <remote-alias>Duration in minutes</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[friends_dataset.csv_C1542B1F278348DF98F8233C7C82014F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[friends_dataset.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[friends_dataset.csv_C1542B1F278348DF98F8233C7C82014F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Director</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Director]</local-name>
+            <parent-name>[friends_dataset.csv]</parent-name>
+            <remote-alias>Director</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[friends_dataset.csv_C1542B1F278348DF98F8233C7C82014F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total stars</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total stars]</local-name>
+            <parent-name>[friends_dataset.csv]</parent-name>
+            <remote-alias>Total stars</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[friends_dataset.csv_C1542B1F278348DF98F8233C7C82014F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total votes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total votes]</local-name>
+            <parent-name>[friends_dataset.csv]</parent-name>
+            <remote-alias>Total votes</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[friends_dataset.csv_C1542B1F278348DF98F8233C7C82014F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='Sum' caption='Episode' datatype='integer' name='[Episode ]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' name='[Season]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='friends_dataset.csv' datatype='table' name='[__tableau_internal_object_id__].[friends_dataset.csv_C1542B1F278348DF98F8233C7C82014F]' role='measure' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/TableauTemp/#TableauTemp_04htytw0ol7zqe16bdvz11mf6dbs.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='08/12/2023 04:46:29 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Episode title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Episode title]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Episode title</remote-alias>
+              <ordinal>0</ordinal>
+              <family>friends_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>232</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[friends_dataset.csv_C1542B1F278348DF98F8233C7C82014F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Description</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Description]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Description</remote-alias>
+              <ordinal>1</ordinal>
+              <family>friends_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>236</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[friends_dataset.csv_C1542B1F278348DF98F8233C7C82014F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Season</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Season]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Season</remote-alias>
+              <ordinal>2</ordinal>
+              <family>friends_dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[friends_dataset.csv_C1542B1F278348DF98F8233C7C82014F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Episode </remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Episode ]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Episode </remote-alias>
+              <ordinal>3</ordinal>
+              <family>friends_dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>25</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[friends_dataset.csv_C1542B1F278348DF98F8233C7C82014F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Duration in minutes</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Duration in minutes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Duration in minutes</remote-alias>
+              <ordinal>4</ordinal>
+              <family>friends_dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[friends_dataset.csv_C1542B1F278348DF98F8233C7C82014F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>5</ordinal>
+              <family>friends_dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[friends_dataset.csv_C1542B1F278348DF98F8233C7C82014F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Director</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Director]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Director</remote-alias>
+              <ordinal>6</ordinal>
+              <family>friends_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>28</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[friends_dataset.csv_C1542B1F278348DF98F8233C7C82014F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total stars</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Total stars]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total stars</remote-alias>
+              <ordinal>7</ordinal>
+              <family>friends_dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>22</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[friends_dataset.csv_C1542B1F278348DF98F8233C7C82014F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total votes</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total votes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total votes</remote-alias>
+              <ordinal>8</ordinal>
+              <family>friends_dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>222</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[friends_dataset.csv_C1542B1F278348DF98F8233C7C82014F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='friends_dataset.csv' id='friends_dataset.csv_C1542B1F278348DF98F8233C7C82014F'>
+            <properties context=''>
+              <relation connection='textscan.1bd1si00c16xlo11mpz2f0eppz2x' name='friends_dataset.csv' table='[friends_dataset#csv]' type='table'>
+                <columns character-set='windows-1252' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Episode title' ordinal='0' />
+                  <column datatype='string' name='Description' ordinal='1' />
+                  <column datatype='integer' name='Season' ordinal='2' />
+                  <column datatype='integer' name='Episode ' ordinal='3' />
+                  <column datatype='integer' name='Duration in minutes' ordinal='4' />
+                  <column datatype='integer' name='Year' ordinal='5' />
+                  <column datatype='string' name='Director' ordinal='6' />
+                  <column datatype='real' name='Total stars' ordinal='7' />
+                  <column datatype='integer' name='Total votes' ordinal='8' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Description'>
+      <repository-location id='Description' path='/workbooks/FriendsTVSeries_16918198302320' revision='' />
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#f8e7d8' fontname='Ink Free' italic='true'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='friends_dataset' name='federated.1mg8k940ap4g6a13yljic0834h25' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1mg8k940ap4g6a13yljic0834h25'>
+            <column datatype='string' name='[Description]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Episode title]' role='dimension' type='nominal' />
+            <column-instance column='[Description]' derivation='None' name='[none:Description:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Episode title]' derivation='None' name='[none:Episode title:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1mg8k940ap4g6a13yljic0834h25].[none:Episode title:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:Episode title:nk]' member='&quot;The Last One: Part 1&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1mg8k940ap4g6a13yljic0834h25].[none:Episode title:nk]</column>
+          </slices>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='color' value='#f8e7d8' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#f8e7d8' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-color' value='#f8e7d8' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#f8e7d8' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#743a37' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='font-family' value='Ink Free' />
+            <format attr='color' value='#f8e7d8' />
+            <format attr='font-size' value='10' />
+          </style-rule>
+          <style-rule element='refboxplot'>
+            <format attr='stroke-color' id='refline0' value='#f8e7d8' />
+            <format attr='whisker-stroke-size' id='refline0' value='1' />
+            <format attr='whisker-stroke-color' id='refline0' value='#f8e7d8' />
+            <format attr='palette' id='refline0' value='bp_brown' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-color' scope='rows' value='#f8e7d8' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='cols' value='#f8e7d8' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='border-width' value='1' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#f8e7d8' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.1mg8k940ap4g6a13yljic0834h25].[none:Episode title:nk]' value='Episode title'>
+              <formatted-text>
+                <run fontsize='12'>Episode title</run>
+              </formatted-text>
+            </format>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#f8e7d8' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='quick-filter-title'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1mg8k940ap4g6a13yljic0834h25].[none:Description:nk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='12'>Description:</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontsize='12'><![CDATA[<[federated.1mg8k940ap4g6a13yljic0834h25].[none:Description:nk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#f8e7d8' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{11B7E566-2E7F-42AD-B799-FA14DE3B42F7}' />
+    </worksheet>
+    <worksheet name='Directors'>
+      <repository-location id='Directors' path='/workbooks/FriendsTVSeries_16918198302320' revision='' />
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#f8e7d8' fontname='Ink Free' italic='true'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='friends_dataset' name='federated.1mg8k940ap4g6a13yljic0834h25' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1mg8k940ap4g6a13yljic0834h25'>
+            <column datatype='string' name='[Director]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Episode' datatype='integer' name='[Episode ]' role='dimension' type='ordinal' />
+            <column-instance column='[Episode ]' derivation='Count' name='[cnt:Episode :qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Director]' derivation='None' name='[none:Director:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='color' value='#f8e7d8' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#f8e7d8' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#743a37' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-family' value='Ink Free' />
+            <format attr='color' value='#f8e7d8' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='border-width' value='1' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#f8e7d8' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <size column='[federated.1mg8k940ap4g6a13yljic0834h25].[cnt:Episode :qk]' />
+              <text column='[federated.1mg8k940ap4g6a13yljic0834h25].[none:Director:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{E5FE14E3-35BC-4E74-AB49-6CC0FF8E7259}' />
+    </worksheet>
+    <worksheet name='Duration (min)'>
+      <repository-location id='Durationmin' path='/workbooks/FriendsTVSeries_16918198302320' revision='' />
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#f8e7d8' fontname='Ink Free' italic='true'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='friends_dataset' name='federated.1mg8k940ap4g6a13yljic0834h25' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1mg8k940ap4g6a13yljic0834h25'>
+            <column datatype='integer' name='[Duration in minutes]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Episode title]' role='dimension' type='nominal' />
+            <column-instance column='[Episode title]' derivation='None' name='[none:Episode title:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Duration in minutes]' derivation='Sum' name='[sum:Duration in minutes:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1mg8k940ap4g6a13yljic0834h25].[none:Episode title:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:Episode title:nk]' member='&quot;The Last One: Part 1&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1mg8k940ap4g6a13yljic0834h25].[none:Episode title:nk]</column>
+          </slices>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='color' value='#f8e7d8' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#f8e7d8' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-color' value='#f8e7d8' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#f8e7d8' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#743a37' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='font-family' value='Ink Free' />
+            <format attr='color' value='#f8e7d8' />
+            <format attr='font-size' value='10' />
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='refboxplot'>
+            <format attr='stroke-color' id='refline0' value='#f8e7d8' />
+            <format attr='whisker-stroke-size' id='refline0' value='1' />
+            <format attr='whisker-stroke-color' id='refline0' value='#f8e7d8' />
+            <format attr='palette' id='refline0' value='bp_brown' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-color' scope='rows' value='#f8e7d8' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='cols' value='#f8e7d8' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='border-width' value='1' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#f8e7d8' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1mg8k940ap4g6a13yljic0834h25].[sum:Duration in minutes:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='12'>Duration (min):</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontsize='12'><![CDATA[<[federated.1mg8k940ap4g6a13yljic0834h25].[sum:Duration in minutes:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+                <format attr='mark-color' value='#f8e7d8' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{87263BC8-0AD1-45FD-824D-75E498EF2D91}' />
+    </worksheet>
+    <worksheet name='Episode'>
+      <repository-location id='Episode' path='/workbooks/FriendsTVSeries_16918198302320' revision='' />
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#f8e7d8' fontname='Ink Free' italic='true'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='friends_dataset' name='federated.1mg8k940ap4g6a13yljic0834h25' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1mg8k940ap4g6a13yljic0834h25'>
+            <column aggregation='Sum' caption='Episode' datatype='integer' name='[Episode ]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Episode title]' role='dimension' type='nominal' />
+            <column-instance column='[Episode ]' derivation='None' name='[none:Episode :ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Episode title]' derivation='None' name='[none:Episode title:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1mg8k940ap4g6a13yljic0834h25].[none:Episode title:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:Episode title:nk]' member='&quot;The Last One: Part 1&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1mg8k940ap4g6a13yljic0834h25].[none:Episode title:nk]</column>
+          </slices>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='color' value='#f8e7d8' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#f8e7d8' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-color' value='#f8e7d8' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#f8e7d8' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#743a37' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='font-family' value='Ink Free' />
+            <format attr='color' value='#f8e7d8' />
+            <format attr='font-size' value='10' />
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='refboxplot'>
+            <format attr='stroke-color' id='refline0' value='#f8e7d8' />
+            <format attr='whisker-stroke-size' id='refline0' value='1' />
+            <format attr='whisker-stroke-color' id='refline0' value='#f8e7d8' />
+            <format attr='palette' id='refline0' value='bp_brown' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-color' scope='rows' value='#f8e7d8' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='cols' value='#f8e7d8' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='border-width' value='1' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#f8e7d8' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1mg8k940ap4g6a13yljic0834h25].[none:Episode :ok]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='12'>Episode:</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontsize='12'><![CDATA[<[federated.1mg8k940ap4g6a13yljic0834h25].[none:Episode :ok]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+                <format attr='mark-color' value='#f8e7d8' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{D614D6A8-CEFD-4ECF-B703-429A88A4C6AC}' />
+    </worksheet>
+    <worksheet name='Season'>
+      <repository-location id='Season' path='/workbooks/FriendsTVSeries_16918198302320' revision='' />
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#f8e7d8' fontname='Ink Free' italic='true'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='friends_dataset' name='federated.1mg8k940ap4g6a13yljic0834h25' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1mg8k940ap4g6a13yljic0834h25'>
+            <column datatype='string' name='[Episode title]' role='dimension' type='nominal' />
+            <column aggregation='Sum' datatype='integer' name='[Season]' role='dimension' type='ordinal' />
+            <column-instance column='[Episode title]' derivation='None' name='[none:Episode title:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Season]' derivation='None' name='[none:Season:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1mg8k940ap4g6a13yljic0834h25].[none:Episode title:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:Episode title:nk]' member='&quot;The Last One: Part 1&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1mg8k940ap4g6a13yljic0834h25].[none:Episode title:nk]</column>
+          </slices>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='color' value='#f8e7d8' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#f8e7d8' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-color' value='#f8e7d8' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#f8e7d8' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#743a37' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='font-family' value='Ink Free' />
+            <format attr='color' value='#f8e7d8' />
+            <format attr='font-size' value='10' />
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='refboxplot'>
+            <format attr='stroke-color' id='refline0' value='#f8e7d8' />
+            <format attr='whisker-stroke-size' id='refline0' value='1' />
+            <format attr='whisker-stroke-color' id='refline0' value='#f8e7d8' />
+            <format attr='palette' id='refline0' value='bp_brown' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-color' scope='rows' value='#f8e7d8' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='cols' value='#f8e7d8' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='border-width' value='1' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#f8e7d8' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1mg8k940ap4g6a13yljic0834h25].[none:Season:ok]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='12'>Season:</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontsize='12'><![CDATA[<[federated.1mg8k940ap4g6a13yljic0834h25].[none:Season:ok]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+                <format attr='mark-color' value='#f8e7d8' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{C5638670-7956-48BA-81EB-C2DC7E613F57}' />
+    </worksheet>
+    <worksheet name='Total Episodes By Season'>
+      <repository-location id='TotalEpisodesBySeason' path='/workbooks/FriendsTVSeries_16918198302320' revision='' />
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#f8e7d8' fontname='Ink Free' italic='true'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='friends_dataset' name='federated.1mg8k940ap4g6a13yljic0834h25' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1mg8k940ap4g6a13yljic0834h25'>
+            <column aggregation='Sum' caption='Episode' datatype='integer' name='[Episode ]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' datatype='integer' name='[Season]' role='dimension' type='ordinal' />
+            <column-instance column='[Episode ]' derivation='Count' name='[cnt:Episode :qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Season]' derivation='None' name='[none:Season:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1mg8k940ap4g6a13yljic0834h25].[cnt:Episode :qk]' scope='cols' value='' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='color' value='#f8e7d8' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#f8e7d8' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-color' value='#f8e7d8' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#f8e7d8' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#743a37' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='font-family' value='Ink Free' />
+            <format attr='color' value='#f8e7d8' />
+            <format attr='font-size' value='10' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-color' scope='rows' value='#f8e7d8' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='cols' value='#f8e7d8' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='border-width' value='1' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#f8e7d8' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1mg8k940ap4g6a13yljic0834h25].[cnt:Episode :qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.1mg8k940ap4g6a13yljic0834h25].[cnt:Episode :qk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#f8e7d8' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1mg8k940ap4g6a13yljic0834h25].[none:Season:ok]</rows>
+        <cols>[federated.1mg8k940ap4g6a13yljic0834h25].[cnt:Episode :qk]</cols>
+      </table>
+      <simple-id uuid='{5AC98A12-9611-4B2A-B7E5-A630666C9186}' />
+    </worksheet>
+    <worksheet name='Total Stars'>
+      <repository-location id='TotalStars' path='/workbooks/FriendsTVSeries_16918198302320' revision='' />
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#f8e7d8' fontname='Ink Free' italic='true'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='friends_dataset' name='federated.1mg8k940ap4g6a13yljic0834h25' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1mg8k940ap4g6a13yljic0834h25'>
+            <column datatype='string' name='[Episode title]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Total stars]' role='measure' type='quantitative' />
+            <column-instance column='[Episode title]' derivation='None' name='[none:Episode title:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Total stars]' derivation='Sum' name='[sum:Total stars:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1mg8k940ap4g6a13yljic0834h25].[none:Episode title:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:Episode title:nk]' member='&quot;The Last One: Part 1&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1mg8k940ap4g6a13yljic0834h25].[none:Episode title:nk]</column>
+          </slices>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='color' value='#f8e7d8' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#f8e7d8' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-color' value='#f8e7d8' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#f8e7d8' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#743a37' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='font-family' value='Ink Free' />
+            <format attr='color' value='#f8e7d8' />
+            <format attr='font-size' value='10' />
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='refboxplot'>
+            <format attr='stroke-color' id='refline0' value='#f8e7d8' />
+            <format attr='whisker-stroke-size' id='refline0' value='1' />
+            <format attr='whisker-stroke-color' id='refline0' value='#f8e7d8' />
+            <format attr='palette' id='refline0' value='bp_brown' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-color' scope='rows' value='#f8e7d8' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='cols' value='#f8e7d8' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='border-width' value='1' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#f8e7d8' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1mg8k940ap4g6a13yljic0834h25].[sum:Total stars:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='12'>Total Stars:</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontsize='12'><![CDATA[<[federated.1mg8k940ap4g6a13yljic0834h25].[sum:Total stars:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+                <format attr='mark-color' value='#f8e7d8' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{77CEB63E-658E-45C9-ACF2-5D7F3E751E16}' />
+    </worksheet>
+    <worksheet name='Total Stars By Season &amp; Episode'>
+      <repository-location id='TotalStarsBySeasonEpisode' path='/workbooks/FriendsTVSeries_16918198302320' revision='' />
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#f8e7d8' fontname='Ink Free' italic='true'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='friends_dataset' name='federated.1mg8k940ap4g6a13yljic0834h25' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1mg8k940ap4g6a13yljic0834h25'>
+            <column aggregation='Sum' caption='Episode' datatype='integer' name='[Episode ]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Episode title]' role='dimension' type='nominal' />
+            <column aggregation='Sum' datatype='integer' name='[Season]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Total stars]' role='measure' type='quantitative' />
+            <column-instance column='[Episode ]' derivation='None' name='[none:Episode :ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Episode title]' derivation='None' name='[none:Episode title:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Season]' derivation='None' name='[none:Season:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Total stars]' derivation='Sum' name='[sum:Total stars:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1mg8k940ap4g6a13yljic0834h25].[sum:Total stars:qk]' scope='rows' value='' />
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.1mg8k940ap4g6a13yljic0834h25].[sum:Total stars:qk]' field-type='quantitative' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='color' value='#f8e7d8' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#f8e7d8' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-color' value='#f8e7d8' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#f8e7d8' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#743a37' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='font-family' value='Ink Free' />
+            <format attr='color' value='#f8e7d8' />
+            <format attr='font-size' value='10' />
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='refboxplot'>
+            <format attr='stroke-color' id='refline0' value='#f8e7d8' />
+            <format attr='whisker-stroke-size' id='refline0' value='1' />
+            <format attr='whisker-stroke-color' id='refline0' value='#f8e7d8' />
+            <format attr='palette' id='refline0' value='bp_brown' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-color' scope='rows' value='#f8e7d8' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='cols' value='#f8e7d8' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='border-width' value='1' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#f8e7d8' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.1mg8k940ap4g6a13yljic0834h25].[none:Season:ok]' />
+              <lod column='[federated.1mg8k940ap4g6a13yljic0834h25].[none:Episode :ok]' />
+              <lod column='[federated.1mg8k940ap4g6a13yljic0834h25].[none:Episode title:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.1mg8k940ap4g6a13yljic0834h25].[sum:Total stars:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.1mg8k940ap4g6a13yljic0834h25].[sum:Total stars:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+                <format attr='mark-color' value='#f8e7d8' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1mg8k940ap4g6a13yljic0834h25].[sum:Total stars:qk]</rows>
+        <cols>[federated.1mg8k940ap4g6a13yljic0834h25].[none:Season:ok]</cols>
+      </table>
+      <simple-id uuid='{351E224A-E9BE-4BF2-8E55-968BE95BD12D}' />
+    </worksheet>
+    <worksheet name='Total Votes'>
+      <repository-location id='TotalVotes' path='/workbooks/FriendsTVSeries_16918198302320' revision='' />
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#f8e7d8' fontname='Ink Free' italic='true'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='friends_dataset' name='federated.1mg8k940ap4g6a13yljic0834h25' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1mg8k940ap4g6a13yljic0834h25'>
+            <column datatype='string' name='[Episode title]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Total votes]' role='measure' type='quantitative' />
+            <column-instance column='[Episode title]' derivation='None' name='[none:Episode title:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Total votes]' derivation='Sum' name='[sum:Total votes:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1mg8k940ap4g6a13yljic0834h25].[none:Episode title:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:Episode title:nk]' member='&quot;The Last One: Part 1&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1mg8k940ap4g6a13yljic0834h25].[none:Episode title:nk]</column>
+          </slices>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='color' value='#f8e7d8' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#f8e7d8' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-color' value='#f8e7d8' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#f8e7d8' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#743a37' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='font-family' value='Ink Free' />
+            <format attr='color' value='#f8e7d8' />
+            <format attr='font-size' value='10' />
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='refboxplot'>
+            <format attr='stroke-color' id='refline0' value='#f8e7d8' />
+            <format attr='whisker-stroke-size' id='refline0' value='1' />
+            <format attr='whisker-stroke-color' id='refline0' value='#f8e7d8' />
+            <format attr='palette' id='refline0' value='bp_brown' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-color' scope='rows' value='#f8e7d8' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='cols' value='#f8e7d8' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='border-width' value='1' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#f8e7d8' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1mg8k940ap4g6a13yljic0834h25].[sum:Total votes:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='12'>Total Votes:</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontsize='12'><![CDATA[<[federated.1mg8k940ap4g6a13yljic0834h25].[sum:Total votes:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+                <format attr='mark-color' value='#f8e7d8' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{5A370B31-4E95-412E-888E-74191D6229D3}' />
+    </worksheet>
+    <worksheet name='Total Votes By Season &amp; Episode'>
+      <repository-location id='TotalVotesBySeasonEpisode' path='/workbooks/FriendsTVSeries_16918198302320' revision='' />
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#f8e7d8' fontname='Ink Free' italic='true'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='friends_dataset' name='federated.1mg8k940ap4g6a13yljic0834h25' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1mg8k940ap4g6a13yljic0834h25'>
+            <column aggregation='Sum' caption='Episode' datatype='integer' name='[Episode ]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' datatype='integer' name='[Season]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Total votes]' role='measure' type='quantitative' />
+            <column-instance column='[Episode ]' derivation='None' name='[none:Episode :ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Season]' derivation='None' name='[none:Season:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Total votes]' derivation='Sum' name='[sum:Total votes:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1mg8k940ap4g6a13yljic0834h25].[sum:Total votes:qk]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='color' value='#f8e7d8' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#f8e7d8' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-color' value='#f8e7d8' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#f8e7d8' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#743a37' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='font-family' value='Ink Free' />
+            <format attr='color' value='#f8e7d8' />
+            <format attr='font-size' value='10' />
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-color' scope='rows' value='#f8e7d8' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='cols' value='#f8e7d8' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='border-width' value='1' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#f8e7d8' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1mg8k940ap4g6a13yljic0834h25].[none:Season:ok]' />
+              <text column='[federated.1mg8k940ap4g6a13yljic0834h25].[none:Season:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#f8e7d8' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1mg8k940ap4g6a13yljic0834h25].[sum:Total votes:qk]</rows>
+        <cols>[federated.1mg8k940ap4g6a13yljic0834h25].[none:Episode :ok]</cols>
+      </table>
+      <simple-id uuid='{A24C4B94-5AC9-436E-8601-04E6401730A3}' />
+    </worksheet>
+    <worksheet name='Year'>
+      <repository-location id='Year' path='/workbooks/FriendsTVSeries_16918198302320' revision='' />
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#f8e7d8' fontname='Ink Free' italic='true'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='friends_dataset' name='federated.1mg8k940ap4g6a13yljic0834h25' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1mg8k940ap4g6a13yljic0834h25'>
+            <column datatype='string' name='[Episode title]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Episode title]' derivation='None' name='[none:Episode title:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1mg8k940ap4g6a13yljic0834h25].[none:Episode title:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:Episode title:nk]' member='&quot;The Last One: Part 1&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1mg8k940ap4g6a13yljic0834h25].[none:Episode title:nk]</column>
+          </slices>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='color' value='#f8e7d8' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#f8e7d8' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-color' value='#f8e7d8' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#f8e7d8' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#743a37' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='font-family' value='Ink Free' />
+            <format attr='color' value='#f8e7d8' />
+            <format attr='font-size' value='10' />
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='refboxplot'>
+            <format attr='stroke-color' id='refline0' value='#f8e7d8' />
+            <format attr='whisker-stroke-size' id='refline0' value='1' />
+            <format attr='whisker-stroke-color' id='refline0' value='#f8e7d8' />
+            <format attr='palette' id='refline0' value='bp_brown' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-color' scope='rows' value='#f8e7d8' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='cols' value='#f8e7d8' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='border-width' value='1' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#f8e7d8' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1mg8k940ap4g6a13yljic0834h25].[none:Year:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='12'>Year:</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontsize='12'><![CDATA[<[federated.1mg8k940ap4g6a13yljic0834h25].[none:Year:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+                <format attr='mark-color' value='#f8e7d8' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{9A66F107-EBB7-46F6-9DC3-B872E0961997}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Friends Dashboard '>
+      <repository-location id='FriendsDashboard' path='/workbooks/FriendsTVSeries_16918198302320' revision='' />
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#743a37' />
+        </style-rule>
+        <style-rule element='dash-title'>
+          <format attr='color' value='#f8e7d8' />
+        </style-rule>
+      </style>
+      <size maxheight='1050' maxwidth='1850' minheight='1050' minwidth='1850' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='friends_dataset' name='federated.1mg8k940ap4g6a13yljic0834h25' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1mg8k940ap4g6a13yljic0834h25'>
+        <column datatype='string' name='[Episode title]' role='dimension' type='nominal' />
+        <column-instance column='[Episode title]' derivation='None' name='[none:Episode title:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98476' id='12' param='horz' type-v2='layout-flow' w='99136' x='432' y='762'>
+            <zone h='98476' id='10' type-v2='layout-basic' w='99136' x='432' y='762'>
+              <zone h='50000' id='3' name='Directors' w='30756' x='432' y='6857'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='50000' id='5' name='Total Episodes By Season' w='27948' x='71620' y='6857'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='42381' id='6' name='Total Votes By Season &amp; Episode' w='49568' x='50000' y='56857'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='42381' id='7' name='Total Stars By Season &amp; Episode' w='49568' x='432' y='56857'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='38857' id='8' is-scaled='1' param='Image/Friends.jpg' type-v2='bitmap' w='40432' x='31188' y='18000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='11143' id='9' name='Description' show-title='false' w='40432' x='31188' y='6857'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='6095' id='13' mode='dropdown' name='Description' param='[federated.1mg8k940ap4g6a13yljic0834h25].[none:Episode title:nk]' show-all='false' type-v2='filter' w='40432' x='31188' y='762'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='6095' id='14' name='Season' show-title='false' w='10487' x='432' y='762'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='6095' id='15' name='Episode' show-title='false' w='10378' x='10919' y='762'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='6095' id='16' name='Year' show-title='false' w='9891' x='21297' y='762'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='6095' id='17' name='Duration (min)' show-title='false' w='9191' x='71620' y='762'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='6095' id='18' name='Total Stars' show-title='false' w='9730' x='80811' y='762'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='6095' id='19' name='Total Votes' show-title='false' w='9027' x='90541' y='762'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='2000' minheight='2000' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='21' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98476' id='20' param='vert' type-v2='layout-flow' w='99136' x='432' y='762'>
+                <zone fixed-size='56' h='6095' id='14' is-fixed='true' name='Season' show-title='false' w='10487' x='432' y='762'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='56' h='6095' id='15' is-fixed='true' name='Episode' show-title='false' w='10378' x='10919' y='762'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='56' h='6095' id='16' is-fixed='true' name='Year' show-title='false' w='9891' x='21297' y='762'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='56' h='6095' id='17' is-fixed='true' name='Duration (min)' show-title='false' w='9191' x='71620' y='762'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='56' h='6095' id='18' is-fixed='true' name='Total Stars' show-title='false' w='9730' x='80811' y='762'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='56' h='6095' id='19' is-fixed='true' name='Total Votes' show-title='false' w='9027' x='90541' y='762'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='50000' id='3' is-fixed='true' name='Directors' w='30756' x='432' y='6857'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6095' id='13' mode='dropdown' name='Description' param='[federated.1mg8k940ap4g6a13yljic0834h25].[none:Episode title:nk]' show-all='false' type-v2='filter' w='40432' x='31188' y='762'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='109' h='11143' id='9' is-fixed='true' name='Description' show-title='false' w='40432' x='31188' y='6857'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='50000' id='5' is-fixed='true' name='Total Episodes By Season' w='27948' x='71620' y='6857'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='38857' id='8' is-fixed='true' is-scaled='1' param='Image/Friends.jpg' type-v2='bitmap' w='40432' x='31188' y='18000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='42381' id='7' is-fixed='true' name='Total Stars By Season &amp; Episode' w='49568' x='432' y='56857'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='42381' id='6' is-fixed='true' name='Total Votes By Season &amp; Episode' w='49568' x='50000' y='56857'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{912484B3-AE21-4A5C-BD29-40991284567A}' />
+    </dashboard>
+  </dashboards>
+  <windows show-side-pane='false' source-height='37'>
+    <window class='worksheet' name='Directors'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1mg8k940ap4g6a13yljic0834h25].[none:Director:nk]</field>
+            <field>[federated.1mg8k940ap4g6a13yljic0834h25].[none:Episode :ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{FB2A6862-7820-4F93-A16E-EB433514C543}' />
+    </window>
+    <window class='worksheet' name='Total Episodes By Season'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1mg8k940ap4g6a13yljic0834h25].[none:Director:nk]</field>
+            <field>[federated.1mg8k940ap4g6a13yljic0834h25].[none:Episode :ok]</field>
+            <field>[federated.1mg8k940ap4g6a13yljic0834h25].[none:Season:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{1CE1203A-67AF-43C9-AE63-74DE09406DA9}' />
+    </window>
+    <window class='worksheet' name='Total Votes By Season &amp; Episode'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1mg8k940ap4g6a13yljic0834h25].[none:Director:nk]</field>
+            <field>[federated.1mg8k940ap4g6a13yljic0834h25].[none:Episode :ok]</field>
+            <field>[federated.1mg8k940ap4g6a13yljic0834h25].[none:Season:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{FB8C2AC3-9821-4B1C-A9C2-6B6D5EE6977C}' />
+    </window>
+    <window class='worksheet' name='Total Stars By Season &amp; Episode'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1mg8k940ap4g6a13yljic0834h25].[none:Director:nk]</field>
+            <field>[federated.1mg8k940ap4g6a13yljic0834h25].[none:Episode :ok]</field>
+            <field>[federated.1mg8k940ap4g6a13yljic0834h25].[none:Episode title:nk]</field>
+            <field>[federated.1mg8k940ap4g6a13yljic0834h25].[none:Season:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{B65A45C6-8A6C-44EE-9E72-FF03FD6D4B94}' />
+    </window>
+    <window class='worksheet' name='Description'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.1mg8k940ap4g6a13yljic0834h25].[none:Episode title:nk]' show-all='false' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1mg8k940ap4g6a13yljic0834h25].[none:Description:nk]</field>
+            <field>[federated.1mg8k940ap4g6a13yljic0834h25].[none:Director:nk]</field>
+            <field>[federated.1mg8k940ap4g6a13yljic0834h25].[none:Episode :ok]</field>
+            <field>[federated.1mg8k940ap4g6a13yljic0834h25].[none:Episode title:nk]</field>
+            <field>[federated.1mg8k940ap4g6a13yljic0834h25].[none:Season:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{EB30FDC1-A15A-4D4A-8C4E-B95041E4819E}' />
+    </window>
+    <window class='worksheet' name='Season'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1mg8k940ap4g6a13yljic0834h25].[none:Description:nk]</field>
+            <field>[federated.1mg8k940ap4g6a13yljic0834h25].[none:Director:nk]</field>
+            <field>[federated.1mg8k940ap4g6a13yljic0834h25].[none:Episode :ok]</field>
+            <field>[federated.1mg8k940ap4g6a13yljic0834h25].[none:Episode title:nk]</field>
+            <field>[federated.1mg8k940ap4g6a13yljic0834h25].[none:Season:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{6A2569B7-B6EC-4AA2-8DDA-9B0CE2EB50EF}' />
+    </window>
+    <window class='worksheet' name='Episode'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1mg8k940ap4g6a13yljic0834h25].[none:Description:nk]</field>
+            <field>[federated.1mg8k940ap4g6a13yljic0834h25].[none:Director:nk]</field>
+            <field>[federated.1mg8k940ap4g6a13yljic0834h25].[none:Episode :ok]</field>
+            <field>[federated.1mg8k940ap4g6a13yljic0834h25].[none:Episode title:nk]</field>
+            <field>[federated.1mg8k940ap4g6a13yljic0834h25].[none:Season:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{F96988DD-6763-4CBD-A8F9-C508B91BB4A4}' />
+    </window>
+    <window class='worksheet' name='Year'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1mg8k940ap4g6a13yljic0834h25].[none:Description:nk]</field>
+            <field>[federated.1mg8k940ap4g6a13yljic0834h25].[none:Director:nk]</field>
+            <field>[federated.1mg8k940ap4g6a13yljic0834h25].[none:Episode :ok]</field>
+            <field>[federated.1mg8k940ap4g6a13yljic0834h25].[none:Episode title:nk]</field>
+            <field>[federated.1mg8k940ap4g6a13yljic0834h25].[none:Season:ok]</field>
+            <field>[federated.1mg8k940ap4g6a13yljic0834h25].[none:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{FF29F158-8233-4584-AE95-BA93F59B4EBE}' />
+    </window>
+    <window class='worksheet' name='Duration (min)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1mg8k940ap4g6a13yljic0834h25].[none:Description:nk]</field>
+            <field>[federated.1mg8k940ap4g6a13yljic0834h25].[none:Director:nk]</field>
+            <field>[federated.1mg8k940ap4g6a13yljic0834h25].[none:Episode :ok]</field>
+            <field>[federated.1mg8k940ap4g6a13yljic0834h25].[none:Episode title:nk]</field>
+            <field>[federated.1mg8k940ap4g6a13yljic0834h25].[none:Season:ok]</field>
+            <field>[federated.1mg8k940ap4g6a13yljic0834h25].[none:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{CCD89078-D393-4B6C-96F1-072D168AAB3F}' />
+    </window>
+    <window class='worksheet' name='Total Stars'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1mg8k940ap4g6a13yljic0834h25].[none:Description:nk]</field>
+            <field>[federated.1mg8k940ap4g6a13yljic0834h25].[none:Director:nk]</field>
+            <field>[federated.1mg8k940ap4g6a13yljic0834h25].[none:Episode :ok]</field>
+            <field>[federated.1mg8k940ap4g6a13yljic0834h25].[none:Episode title:nk]</field>
+            <field>[federated.1mg8k940ap4g6a13yljic0834h25].[none:Season:ok]</field>
+            <field>[federated.1mg8k940ap4g6a13yljic0834h25].[none:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A2413E35-162D-4140-9296-DAAEC15D9440}' />
+    </window>
+    <window class='worksheet' name='Total Votes'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1mg8k940ap4g6a13yljic0834h25].[none:Description:nk]</field>
+            <field>[federated.1mg8k940ap4g6a13yljic0834h25].[none:Director:nk]</field>
+            <field>[federated.1mg8k940ap4g6a13yljic0834h25].[none:Episode :ok]</field>
+            <field>[federated.1mg8k940ap4g6a13yljic0834h25].[none:Episode title:nk]</field>
+            <field>[federated.1mg8k940ap4g6a13yljic0834h25].[none:Season:ok]</field>
+            <field>[federated.1mg8k940ap4g6a13yljic0834h25].[none:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{2BEC659C-5F92-4E9E-96F3-0F0E73D977DB}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Friends Dashboard '>
+      <viewpoints>
+        <viewpoint name='Description'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Directors'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Duration (min)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Episode'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Season'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Episodes By Season'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Stars'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Stars By Season &amp; Episode'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Votes'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Votes By Season &amp; Episode'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Year'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='13' />
+      <simple-id uuid='{54AF66BF-09CF-4F6F-AC31-A7375A9DC8DE}' />
+    </window>
+  </windows>
+</workbook>
