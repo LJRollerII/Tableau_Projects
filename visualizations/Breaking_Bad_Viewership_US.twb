@@ -1,0 +1,2401 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20232.23.0830.1549                               -->
+<workbook original-version='18.1' source-build='2023.1.2 (20231.23.0511.1508)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.Layers.true...Layers />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location derived-from='https://vizhub/workbooks/BreakingBadViewershipUS?rev=1.3' id='BreakingBadViewershipUS' path='/workbooks' revision='1.3' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <style>
+    <style-rule element='gridline'>
+      <format attr='line-visibility' value='off' />
+    </style-rule>
+    <style-rule element='zeroline'>
+      <format attr='line-visibility' value='off' />
+    </style-rule>
+  </style>
+  <datasources>
+    <datasource caption='Breaking_Bad_Dataset' inline='true' name='federated.19y320q1cnpeeu1dqfu3215r1h2x' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Breaking_Bad_Dataset' name='textscan.0wls46n0gw42ig1ev58t51lijdwg'>
+            <connection class='textscan' directory='C:/Users/ljcoo/Coding/Projects/Tableau_Projects/data' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0wls46n0gw42ig1ev58t51lijdwg' name='Breaking_Bad_Dataset.csv' table='[Breaking_Bad_Dataset#csv]' type='table'>
+          <columns character-set='windows-1252' header='yes' locale='en_US' separator=','>
+            <column datatype='date' date-parse-format='dd-MMM-yy' name='Release date' ordinal='0' />
+            <column datatype='integer' name='Season' ordinal='1' />
+            <column datatype='integer' name='Episode' ordinal='2' />
+            <column datatype='string' name='Title' ordinal='3' />
+            <column datatype='integer' name='Duration in minutes' ordinal='4' />
+            <column datatype='string' name='U.S. viewers in millions' ordinal='5' />
+            <column datatype='real' name='IMDB Rating' ordinal='6' />
+            <column datatype='string' name='Director' ordinal='7' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0wls46n0gw42ig1ev58t51lijdwg' name='Breaking_Bad_Dataset.csv' table='[Breaking_Bad_Dataset#csv]' type='table'>
+          <columns character-set='windows-1252' header='yes' locale='en_US' separator=','>
+            <column datatype='date' date-parse-format='dd-MMM-yy' name='Release date' ordinal='0' />
+            <column datatype='integer' name='Season' ordinal='1' />
+            <column datatype='integer' name='Episode' ordinal='2' />
+            <column datatype='string' name='Title' ordinal='3' />
+            <column datatype='integer' name='Duration in minutes' ordinal='4' />
+            <column datatype='string' name='U.S. viewers in millions' ordinal='5' />
+            <column datatype='real' name='IMDB Rating' ordinal='6' />
+            <column datatype='string' name='Director' ordinal='7' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Breaking_Bad_Dataset.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;windows-1252&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Release date</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Release date]</local-name>
+            <parent-name>[Breaking_Bad_Dataset.csv]</parent-name>
+            <remote-alias>Release date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Breaking_Bad_Dataset.csv_D2BC72FA1FE24703835EA309B3CFB86C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Season</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Season]</local-name>
+            <parent-name>[Breaking_Bad_Dataset.csv]</parent-name>
+            <remote-alias>Season</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Breaking_Bad_Dataset.csv_D2BC72FA1FE24703835EA309B3CFB86C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Episode</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Episode]</local-name>
+            <parent-name>[Breaking_Bad_Dataset.csv]</parent-name>
+            <remote-alias>Episode</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Breaking_Bad_Dataset.csv_D2BC72FA1FE24703835EA309B3CFB86C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Title]</local-name>
+            <parent-name>[Breaking_Bad_Dataset.csv]</parent-name>
+            <remote-alias>Title</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Breaking_Bad_Dataset.csv_D2BC72FA1FE24703835EA309B3CFB86C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Duration in minutes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Duration in minutes]</local-name>
+            <parent-name>[Breaking_Bad_Dataset.csv]</parent-name>
+            <remote-alias>Duration in minutes</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Breaking_Bad_Dataset.csv_D2BC72FA1FE24703835EA309B3CFB86C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>U.S. viewers in millions</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[U.S. viewers in millions]</local-name>
+            <parent-name>[Breaking_Bad_Dataset.csv]</parent-name>
+            <remote-alias>U.S. viewers in millions</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Breaking_Bad_Dataset.csv_D2BC72FA1FE24703835EA309B3CFB86C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IMDB Rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[IMDB Rating]</local-name>
+            <parent-name>[Breaking_Bad_Dataset.csv]</parent-name>
+            <remote-alias>IMDB Rating</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Breaking_Bad_Dataset.csv_D2BC72FA1FE24703835EA309B3CFB86C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Director</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Director]</local-name>
+            <parent-name>[Breaking_Bad_Dataset.csv]</parent-name>
+            <remote-alias>Director</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Breaking_Bad_Dataset.csv_D2BC72FA1FE24703835EA309B3CFB86C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Point' datatype='spatial' name='[Calculation_998673226766475264]' role='measure' type='nominal'>
+        <calculation class='tableau' formula='MAKEPOINT(0,0)' />
+      </column>
+      <column caption='Total Episodes' datatype='string' name='[Calculation_998673226769399809]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='&quot;Total Episodes&quot;' />
+      </column>
+      <column caption='Description' datatype='string' name='[Calculation_998673226770944002]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='&quot;Breaking Bad is an American crime drama television series created &#13;&#10;and produced by Vince Gilligan for AMC.Set and filmed in Albuquerque, &#13;&#10;New Mexico, the series follows Walter White (Bryan Cranston), an &#13;&#10;underpaid, overqualified, and dispirited high-school chemistry teacher &#13;&#10;who is struggling with a recent diagnosis of stage-three lung cancer. &#13;&#10;White turns to a life of crime and partners with a former student, &#13;&#10;Jesse Pinkman (Aaron Paul), to produce and distribute methamphetamine &#13;&#10;to secure his family&apos;s financial future before he dies, while navigating &#13;&#10;the dangers of the criminal underworld. Breaking Bad premiered on AMC on &#13;&#10;January 20, 2008, and concluded on September 29, 2013, after five seasons&#13;&#10;consisting of 62 episodes.&quot;' />
+      </column>
+      <column aggregation='Sum' datatype='integer' name='[Episode]' role='dimension' type='ordinal' />
+      <column datatype='date' datatype-customized='true' name='[Release date]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' name='[Season]' role='dimension' type='ordinal' />
+      <column datatype='real' datatype-customized='true' name='[U.S. viewers in millions]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Breaking_Bad_Dataset.csv' datatype='table' name='[__tableau_internal_object_id__].[Breaking_Bad_Dataset.csv_D2BC72FA1FE24703835EA309B3CFB86C]' role='measure' type='quantitative' />
+      <column-instance column='[Season]' derivation='None' name='[none:Season:ok]' pivot='key' type='ordinal' />
+      <drill-paths>
+        <drill-path name='Season'>
+          <field>[Season]</field>
+          <field>[Episode]</field>
+        </drill-path>
+      </drill-paths>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/TableauTemp/TEMP_0gmiuoe0dtgh5m153zevb08j59zg.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/08/2023 06:25:16 PM' updated-database='C:/Users/ljcoo/AppData/Local/Temp/TableauTemp/#TableauTemp_03e2hgc1mq2gkh1czpuvg0yrxbus.hyper'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table'>
+            <columns>
+              <column datatype='date' date-parse-format='dd-MMM-yy' name='Release date' />
+            </columns>
+          </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table'>
+            <columns>
+              <column datatype='date' date-parse-format='dd-MMM-yy' name='Release date' />
+            </columns>
+          </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Release date</remote-name>
+              <remote-type>7</remote-type>
+              <local-name>[Release date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Release date</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Breaking_Bad_Dataset.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Season</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Season]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Season</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Breaking_Bad_Dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Episode</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Episode]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Episode</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Breaking_Bad_Dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Title]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Title</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Breaking_Bad_Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>62</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Duration in minutes</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Duration in minutes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Duration in minutes</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Breaking_Bad_Dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>U.S. viewers in millions</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[U.S. viewers in millions]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>U.S. viewers in millions</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Breaking_Bad_Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>53</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>IMDB Rating</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[IMDB Rating]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>IMDB Rating</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Breaking_Bad_Dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Director</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Director]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Director</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Breaking_Bad_Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>25</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Season:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>5</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>2</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Breaking_Bad_Dataset.csv' id='Breaking_Bad_Dataset.csv_D2BC72FA1FE24703835EA309B3CFB86C'>
+            <properties context=''>
+              <relation connection='textscan.0wls46n0gw42ig1ev58t51lijdwg' name='Breaking_Bad_Dataset.csv' table='[Breaking_Bad_Dataset#csv]' type='table'>
+                <columns character-set='windows-1252' header='yes' locale='en_US' separator=','>
+                  <column datatype='date' date-parse-format='dd-MMM-yy' name='Release date' ordinal='0' />
+                  <column datatype='integer' name='Season' ordinal='1' />
+                  <column datatype='integer' name='Episode' ordinal='2' />
+                  <column datatype='string' name='Title' ordinal='3' />
+                  <column datatype='integer' name='Duration in minutes' ordinal='4' />
+                  <column datatype='string' name='U.S. viewers in millions' ordinal='5' />
+                  <column datatype='real' name='IMDB Rating' ordinal='6' />
+                  <column datatype='string' name='Director' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table'>
+                <columns>
+                  <column datatype='date' date-parse-format='dd-MMM-yy' name='Release date' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Description'>
+      <repository-location derived-from='https://vizhub/workbooks/BreakingBadViewershipUS/Description?rev=' id='87507915' path='/workbooks/BreakingBadViewershipUS' revision='' />
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Breaking_Bad_Dataset' name='federated.19y320q1cnpeeu1dqfu3215r1h2x' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.19y320q1cnpeeu1dqfu3215r1h2x'>
+            <column caption='Description' datatype='string' name='[Calculation_998673226770944002]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot;Breaking Bad is an American crime drama television series created &#13;&#10;and produced by Vince Gilligan for AMC.Set and filmed in Albuquerque, &#13;&#10;New Mexico, the series follows Walter White (Bryan Cranston), an &#13;&#10;underpaid, overqualified, and dispirited high-school chemistry teacher &#13;&#10;who is struggling with a recent diagnosis of stage-three lung cancer. &#13;&#10;White turns to a life of crime and partners with a former student, &#13;&#10;Jesse Pinkman (Aaron Paul), to produce and distribute methamphetamine &#13;&#10;to secure his family&apos;s financial future before he dies, while navigating &#13;&#10;the dangers of the criminal underworld. Breaking Bad premiered on AMC on &#13;&#10;January 20, 2008, and concluded on September 29, 2013, after five seasons&#13;&#10;consisting of 62 episodes.&quot;' />
+            </column>
+            <column-instance column='[Calculation_998673226770944002]' derivation='None' name='[none:Calculation_998673226770944002:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#38aa5e' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='refboxplot'>
+            <format attr='palette' id='refline0' value='bp_gray40' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-color' scope='rows' value='#ffffff' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='cols' value='#ffffff' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#00000000' />
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Calculation_998673226770944002:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text />
+            </customized-tooltip>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='color' value='#000000' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#ffffff' />
+                <format attr='size' value='1.9670165777206421' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{0C5B4DC5-E9CC-49AB-84AA-ECC8948BADA8}' />
+    </worksheet>
+    <worksheet name='Directors'>
+      <repository-location derived-from='https://vizhub/workbooks/BreakingBadViewershipUS/Directors?rev=' id='87505164' path='/workbooks/BreakingBadViewershipUS' revision='' />
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Breaking_Bad_Dataset' name='federated.19y320q1cnpeeu1dqfu3215r1h2x' />
+          </datasources>
+          <datasource-dependencies datasource='federated.19y320q1cnpeeu1dqfu3215r1h2x'>
+            <column datatype='string' name='[Director]' role='dimension' type='nominal' />
+            <column aggregation='Sum' datatype='integer' name='[Episode]' role='dimension' type='ordinal' />
+            <column-instance column='[Episode]' derivation='Count' name='[cnt:Episode:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Director]' derivation='None' name='[none:Director:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#38aa5e' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-color' scope='rows' value='#ffffff' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='cols' value='#ffffff' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#00000000' />
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <size column='[federated.19y320q1cnpeeu1dqfu3215r1h2x].[cnt:Episode:qk]' />
+              <text column='[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Director:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#ffffff' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{11E2C6E6-F12A-4044-A226-9839F437A65F}' />
+    </worksheet>
+    <worksheet name='Duration '>
+      <repository-location derived-from='https://vizhub/workbooks/BreakingBadViewershipUS/Duration?rev=' id='87507920' path='/workbooks/BreakingBadViewershipUS' revision='' />
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Breaking_Bad_Dataset' name='federated.19y320q1cnpeeu1dqfu3215r1h2x' />
+          </datasources>
+          <datasource-dependencies datasource='federated.19y320q1cnpeeu1dqfu3215r1h2x'>
+            <column datatype='integer' name='[Duration in minutes]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Title]' role='dimension' type='nominal' />
+            <column-instance column='[Title]' derivation='None' name='[none:Title:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Duration in minutes]' derivation='Sum' name='[sum:Duration in minutes:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Title:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:Title:nk]' member='&quot;Better Call Saul&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Title:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#38aa5e' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-color' scope='rows' value='#ffffff' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='cols' value='#ffffff' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#00000000' />
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <text column='[federated.19y320q1cnpeeu1dqfu3215r1h2x].[sum:Duration in minutes:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>Duration (min):&#10;&lt;</run>
+                <run>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[sum:Duration in minutes:qk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='center' />
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#ffffff' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{B61ACBA2-9515-4ACB-88D4-AAA36B9550A6}' />
+    </worksheet>
+    <worksheet name='Episode'>
+      <repository-location derived-from='https://vizhub/workbooks/BreakingBadViewershipUS/Episode?rev=' id='87507917' path='/workbooks/BreakingBadViewershipUS' revision='' />
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Breaking_Bad_Dataset' name='federated.19y320q1cnpeeu1dqfu3215r1h2x' />
+          </datasources>
+          <datasource-dependencies datasource='federated.19y320q1cnpeeu1dqfu3215r1h2x'>
+            <column aggregation='Sum' datatype='integer' name='[Episode]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Title]' role='dimension' type='nominal' />
+            <column-instance column='[Episode]' derivation='None' name='[none:Episode:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Title]' derivation='None' name='[none:Title:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Title:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:Title:nk]' member='&quot;Better Call Saul&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Title:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#38aa5e' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-color' scope='rows' value='#ffffff' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='cols' value='#ffffff' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#00000000' />
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <text column='[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Episode:ok]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>Episode:&#10;&lt;</run>
+                <run>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Episode:ok]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='center' />
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#ffffff' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{890FA4A3-D7DE-446A-8DB2-EE0FD60B9EB6}' />
+    </worksheet>
+    <worksheet name='Episodes By Season'>
+      <repository-location derived-from='https://vizhub/workbooks/BreakingBadViewershipUS/EpisodesBySeason?rev=' id='87505165' path='/workbooks/BreakingBadViewershipUS' revision='' />
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Breaking_Bad_Dataset' name='federated.19y320q1cnpeeu1dqfu3215r1h2x' />
+          </datasources>
+          <datasource-dependencies datasource='federated.19y320q1cnpeeu1dqfu3215r1h2x'>
+            <column aggregation='Sum' datatype='integer' name='[Episode]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' datatype='integer' name='[Season]' role='dimension' type='ordinal' />
+            <column-instance column='[Episode]' derivation='Count' name='[cnt:Episode:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Season]' derivation='None' name='[none:Season:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.19y320q1cnpeeu1dqfu3215r1h2x].[cnt:Episode:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <format attr='display' class='1' field='[federated.19y320q1cnpeeu1dqfu3215r1h2x].[cnt:Episode:qk]' scope='rows' value='false' />
+            <format attr='title' class='0' field='[federated.19y320q1cnpeeu1dqfu3215r1h2x].[cnt:Episode:qk]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#38aa5e' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-color' scope='rows' value='#ffffff' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='cols' value='#ffffff' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#00000000' />
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#ffffff' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.19y320q1cnpeeu1dqfu3215r1h2x].[cnt:Episode:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.19y320q1cnpeeu1dqfu3215r1h2x].[cnt:Episode:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='color' value='#000000' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#ffffff' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='3.1270718574523926' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.19y320q1cnpeeu1dqfu3215r1h2x].[cnt:Episode:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#ffffff' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='size' value='0.097955800592899323' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.19y320q1cnpeeu1dqfu3215r1h2x].[cnt:Episode:qk] + [federated.19y320q1cnpeeu1dqfu3215r1h2x].[cnt:Episode:qk])</rows>
+        <cols>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Season:ok]</cols>
+      </table>
+      <simple-id uuid='{F0DF14CC-6439-4E27-8365-36C0511EAF3D}' />
+    </worksheet>
+    <worksheet name='Episodes By Season &amp; Minutes'>
+      <repository-location derived-from='https://vizhub/workbooks/BreakingBadViewershipUS/EpisodesBySeasonMinutes?rev=' id='87505865' path='/workbooks/BreakingBadViewershipUS' revision='' />
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Breaking_Bad_Dataset' name='federated.19y320q1cnpeeu1dqfu3215r1h2x' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.19y320q1cnpeeu1dqfu3215r1h2x'>
+            <column caption='Point' datatype='spatial' name='[Calculation_998673226766475264]' role='measure' type='nominal'>
+              <calculation class='tableau' formula='MAKEPOINT(0,0)' />
+            </column>
+            <column caption='Total Episodes' datatype='string' name='[Calculation_998673226769399809]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot;Total Episodes&quot;' />
+            </column>
+            <column datatype='integer' name='[Duration in minutes]' role='measure' type='quantitative' />
+            <column aggregation='Sum' datatype='integer' name='[Episode]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' datatype='integer' name='[Season]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_998673226766475264]' derivation='Collect' name='[clct:Calculation_998673226766475264:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Episode]' derivation='Count' name='[cnt:Episode:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_998673226769399809]' derivation='None' name='[none:Calculation_998673226769399809:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Episode]' derivation='None' name='[none:Episode:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Season]' derivation='None' name='[none:Season:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Duration in minutes]' derivation='Sum' name='[sum:Duration in minutes:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#38aa5e' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='refboxplot'>
+            <format attr='palette' id='refline0' value='bp_gray40' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-color' scope='rows' value='#ffffff' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='cols' value='#ffffff' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#00000000' />
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes _.fcp.Layers.true...customization-axis='layer'>
+          <_.fcp.Layers.true...pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <lod column='[federated.19y320q1cnpeeu1dqfu3215r1h2x].[clct:Calculation_998673226766475264:nk]' />
+            </encodings>
+          </_.fcp.Layers.true...pane>
+          <pane _.fcp.Layers.true...title='Episodes' id='0' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Season:ok]' />
+              <color column='[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Episode:ok]' />
+              <lod column='[federated.19y320q1cnpeeu1dqfu3215r1h2x].[clct:Calculation_998673226766475264:nk]' />
+              <lod column='[federated.19y320q1cnpeeu1dqfu3215r1h2x].[sum:Duration in minutes:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.4612706899642944' />
+              </style-rule>
+            </style>
+          </pane>
+          <_.fcp.Layers.true...pane id='2' selection-relaxation-option='selection-relaxation-allow' title='Seasons'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Season:ok]' />
+              <wedge-size column='[federated.19y320q1cnpeeu1dqfu3215r1h2x].[cnt:Episode:qk]' />
+              <lod column='[federated.19y320q1cnpeeu1dqfu3215r1h2x].[clct:Calculation_998673226766475264:nk]' />
+            </encodings>
+          </_.fcp.Layers.true...pane>
+          <_.fcp.Layers.true...pane id='3' selection-relaxation-option='selection-relaxation-allow' title='Center'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Calculation_998673226769399809:nk]' />
+              <text column='[federated.19y320q1cnpeeu1dqfu3215r1h2x].[cnt:Episode:qk]' />
+              <lod column='[federated.19y320q1cnpeeu1dqfu3215r1h2x].[clct:Calculation_998673226766475264:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='color' value='#000000' />
+                <format attr='font-size' value='6' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#ffffff' />
+                <format attr='size' value='0.58171272277832031' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </_.fcp.Layers.true...pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{18EDBA58-456B-4AA0-A276-9D95E3B978B7}' />
+    </worksheet>
+    <worksheet name='IMDB Rating'>
+      <repository-location derived-from='https://vizhub/workbooks/BreakingBadViewershipUS/IMDBRating?rev=' id='87507918' path='/workbooks/BreakingBadViewershipUS' revision='' />
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Breaking_Bad_Dataset' name='federated.19y320q1cnpeeu1dqfu3215r1h2x' />
+          </datasources>
+          <datasource-dependencies datasource='federated.19y320q1cnpeeu1dqfu3215r1h2x'>
+            <column datatype='real' name='[IMDB Rating]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Title]' role='dimension' type='nominal' />
+            <column-instance column='[Title]' derivation='None' name='[none:Title:nk]' pivot='key' type='nominal' />
+            <column-instance column='[IMDB Rating]' derivation='Sum' name='[sum:IMDB Rating:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Title:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:Title:nk]' member='&quot;Better Call Saul&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Title:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+            <format attr='text-format' field='[federated.19y320q1cnpeeu1dqfu3215r1h2x].[sum:IMDB Rating:qk]' value='n#,##0.0;-#,##0.0' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#38aa5e' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-color' scope='rows' value='#ffffff' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='cols' value='#ffffff' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#00000000' />
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <text column='[federated.19y320q1cnpeeu1dqfu3215r1h2x].[sum:IMDB Rating:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>IMDB Rating:&#10;&lt;</run>
+                <run>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[sum:IMDB Rating:qk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='center' />
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#ffffff' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{8A41E75B-7933-4A27-BF5F-104688B17A7F}' />
+    </worksheet>
+    <worksheet name='IMDB Rating By Season'>
+      <repository-location derived-from='https://vizhub/workbooks/BreakingBadViewershipUS/IMDBRatingBySeason?rev=' id='87505166' path='/workbooks/BreakingBadViewershipUS' revision='' />
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Breaking_Bad_Dataset' name='federated.19y320q1cnpeeu1dqfu3215r1h2x' />
+          </datasources>
+          <datasource-dependencies datasource='federated.19y320q1cnpeeu1dqfu3215r1h2x'>
+            <column aggregation='Sum' datatype='integer' name='[Episode]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[IMDB Rating]' role='measure' type='quantitative' />
+            <column aggregation='Sum' datatype='integer' name='[Season]' role='dimension' type='ordinal' />
+            <column-instance column='[Episode]' derivation='None' name='[none:Episode:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Season]' derivation='None' name='[none:Season:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[IMDB Rating]' derivation='Sum' name='[sum:IMDB Rating:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.19y320q1cnpeeu1dqfu3215r1h2x].[sum:IMDB Rating:qk]' scope='rows' value='' />
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.19y320q1cnpeeu1dqfu3215r1h2x].[sum:IMDB Rating:qk]' field-type='quantitative' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#38aa5e' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='refboxplot'>
+            <format attr='palette' id='refline0' value='bp_gray40' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-color' scope='rows' value='#ffffff' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='cols' value='#ffffff' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#00000000' />
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Season:ok]' />
+              <lod column='[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Episode:ok]' />
+            </encodings>
+            <reference-line axis-column='[federated.19y320q1cnpeeu1dqfu3215r1h2x].[sum:IMDB Rating:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.19y320q1cnpeeu1dqfu3215r1h2x].[sum:IMDB Rating:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[sum:IMDB Rating:qk]</rows>
+        <cols>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Season:ok]</cols>
+      </table>
+      <simple-id uuid='{DBE4DF66-4B77-4D7C-80AF-389C1C50FCC4}' />
+    </worksheet>
+    <worksheet name='Release Date'>
+      <repository-location derived-from='https://vizhub/workbooks/BreakingBadViewershipUS/ReleaseDate?rev=' id='87507919' path='/workbooks/BreakingBadViewershipUS' revision='' />
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Breaking_Bad_Dataset' name='federated.19y320q1cnpeeu1dqfu3215r1h2x' />
+          </datasources>
+          <datasource-dependencies datasource='federated.19y320q1cnpeeu1dqfu3215r1h2x'>
+            <column datatype='date' datatype-customized='true' name='[Release date]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Title]' role='dimension' type='nominal' />
+            <column-instance column='[Release date]' derivation='None' name='[none:Release date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Title]' derivation='None' name='[none:Title:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Title:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:Title:nk]' member='&quot;Better Call Saul&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Title:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+            <format attr='text-format' field='[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Release date:qk]' value='*mmmm d, yyyy' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#38aa5e' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-color' scope='rows' value='#ffffff' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='cols' value='#ffffff' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#00000000' />
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <text column='[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Release date:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>Release Date:&#10;</run>
+                <run><![CDATA[<[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Release date:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='center' />
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#ffffff' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{016C2F38-AE93-400F-8A74-6D13BD1EB329}' />
+    </worksheet>
+    <worksheet name='Season'>
+      <repository-location derived-from='https://vizhub/workbooks/BreakingBadViewershipUS/Season?rev=' id='87507916' path='/workbooks/BreakingBadViewershipUS' revision='' />
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Breaking_Bad_Dataset' name='federated.19y320q1cnpeeu1dqfu3215r1h2x' />
+          </datasources>
+          <datasource-dependencies datasource='federated.19y320q1cnpeeu1dqfu3215r1h2x'>
+            <column aggregation='Sum' datatype='integer' name='[Season]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Title]' role='dimension' type='nominal' />
+            <column-instance column='[Season]' derivation='None' name='[none:Season:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Title]' derivation='None' name='[none:Title:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Title:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:Title:nk]' member='&quot;Better Call Saul&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Title:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#38aa5e' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-color' scope='rows' value='#ffffff' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='cols' value='#ffffff' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#00000000' />
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='quick-filter-title'>
+            <format attr='color' value='#ffffff' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <text column='[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Season:ok]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>Season:&#10;&lt;</run>
+                <run>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Season:ok]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='center' />
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#ffffff' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{03480BD4-B4CB-43DC-AFA2-DC1F5D72DDA1}' />
+    </worksheet>
+    <worksheet name='U.S. Viewers By Year (millions)'>
+      <repository-location derived-from='https://vizhub/workbooks/BreakingBadViewershipUS/U_S_ViewersByYearmillions?rev=' id='87507914' path='/workbooks/BreakingBadViewershipUS' revision='' />
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Breaking_Bad_Dataset' name='federated.19y320q1cnpeeu1dqfu3215r1h2x' />
+          </datasources>
+          <datasource-dependencies datasource='federated.19y320q1cnpeeu1dqfu3215r1h2x'>
+            <column datatype='date' datatype-customized='true' name='[Release date]' role='dimension' type='ordinal' />
+            <column datatype='real' datatype-customized='true' name='[U.S. viewers in millions]' role='measure' type='quantitative' />
+            <column-instance column='[U.S. viewers in millions]' derivation='Sum' name='[sum:U.S. viewers in millions:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Release date]' derivation='Year' name='[yr:Release date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.19y320q1cnpeeu1dqfu3215r1h2x].[sum:U.S. viewers in millions:qk]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#38aa5e' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-color' scope='rows' value='#ffffff' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='cols' value='#ffffff' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#00000000' />
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#ffffff' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[sum:U.S. viewers in millions:qk]</rows>
+        <cols>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[yr:Release date:ok]</cols>
+      </table>
+      <simple-id uuid='{D7F980CB-B8A1-4C2E-A9C4-CFFC44BB66EB}' />
+    </worksheet>
+    <worksheet name='US Viewers'>
+      <repository-location derived-from='https://vizhub/workbooks/BreakingBadViewershipUS/USViewers?rev=' id='87507921' path='/workbooks/BreakingBadViewershipUS' revision='' />
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Breaking_Bad_Dataset' name='federated.19y320q1cnpeeu1dqfu3215r1h2x' />
+          </datasources>
+          <datasource-dependencies datasource='federated.19y320q1cnpeeu1dqfu3215r1h2x'>
+            <column datatype='string' name='[Title]' role='dimension' type='nominal' />
+            <column datatype='real' datatype-customized='true' name='[U.S. viewers in millions]' role='measure' type='quantitative' />
+            <column-instance column='[Title]' derivation='None' name='[none:Title:nk]' pivot='key' type='nominal' />
+            <column-instance column='[U.S. viewers in millions]' derivation='Sum' name='[sum:U.S. viewers in millions:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Title:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:Title:nk]' member='&quot;Better Call Saul&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Title:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#38aa5e' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-color' scope='rows' value='#ffffff' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='cols' value='#ffffff' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#00000000' />
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <text column='[federated.19y320q1cnpeeu1dqfu3215r1h2x].[sum:U.S. viewers in millions:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>U.S. Viewers:&#10;&lt;</run>
+                <run>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[sum:U.S. viewers in millions:qk]</run>
+                <run>&gt; M</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='center' />
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#ffffff' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{DDCCF7AD-54CE-4EE5-81AD-90A6516A7764}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Breaking Bad Viewership'>
+      <repository-location derived-from='https://vizhub/workbooks/BreakingBadViewershipUS/BreakingBadViewership?rev=' id='87507922' path='/workbooks/BreakingBadViewershipUS' revision='' />
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#38aa5e' />
+        </style-rule>
+      </style>
+      <size maxheight='1050' maxwidth='1850' minheight='1050' minwidth='1850' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='Breaking_Bad_Dataset' name='federated.19y320q1cnpeeu1dqfu3215r1h2x' />
+      </datasources>
+      <datasource-dependencies datasource='federated.19y320q1cnpeeu1dqfu3215r1h2x'>
+        <column datatype='string' name='[Title]' role='dimension' type='nominal' />
+        <column-instance column='[Title]' derivation='None' name='[none:Title:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98476' id='15' param='horz' type-v2='layout-flow' w='99136' x='432' y='762'>
+            <zone h='98476' id='13' type-v2='layout-basic' w='99136' x='432' y='762'>
+              <zone h='36000' id='3' name='U.S. Viewers By Year (millions)' w='37462' x='62106' y='63238'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='36000' id='5' name='Directors' w='30811' x='432' y='63238'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='31333' id='6' name='Episodes By Season' w='30811' x='432' y='31905'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='31143' id='7' is-scaled='1' param='Image/Breaking_Bad_Logo.png' type-v2='bitmap' w='30836' x='432' y='762'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='31143' id='8' name='Description' show-title='false' w='37462' x='62106' y='762'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='31333' id='9' name='IMDB Rating By Season' w='37462' x='62106' y='31905'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='36000' id='10' name='Episodes By Season &amp; Minutes' w='30863' x='31243' y='63238'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='31333' id='11' is-scaled='1' param='Image/Walter_White_Breaking_Bad.jpg' type-v2='bitmap' w='30863' x='31243' y='31905'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='11524' id='12' name='Season' show-title='false' w='10516' x='31268' y='7905'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='11524' id='17' name='Episode' show-title='false' w='10685' x='41784' y='7905'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='11524' id='19' name='IMDB Rating' show-title='false' w='9637' x='52469' y='7905'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='12476' id='21' name='Release Date' show-title='false' w='10516' x='31268' y='19429'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='12476' id='23' name='Duration ' show-title='false' w='10702' x='41784' y='19429'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='12476' id='25' name='US Viewers' show-title='false' w='9620' x='52486' y='19429'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='7143' id='16' mode='dropdown' name='Season' param='[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Title:nk]' show-all='false' type-v2='filter' w='30838' x='31268' y='762'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='3150' minheight='3150' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='29' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98476' id='28' param='vert' type-v2='layout-flow' w='99136' x='432' y='762'>
+                <zone fixed-size='280' h='31143' id='7' is-fixed='true' is-scaled='1' param='Image/Breaking_Bad_Logo.png' type-v2='bitmap' w='30836' x='432' y='762'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='31143' id='8' is-fixed='true' name='Description' show-title='false' w='37462' x='62106' y='762'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7143' id='16' mode='dropdown' name='Season' param='[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Title:nk]' show-all='false' type-v2='filter' w='30838' x='31268' y='762'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='113' h='11524' id='12' is-fixed='true' name='Season' show-title='false' w='10516' x='31268' y='7905'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='113' h='11524' id='17' is-fixed='true' name='Episode' show-title='false' w='10685' x='41784' y='7905'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='113' h='11524' id='19' is-fixed='true' name='IMDB Rating' show-title='false' w='9637' x='52469' y='7905'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='123' h='12476' id='21' is-fixed='true' name='Release Date' show-title='false' w='10516' x='31268' y='19429'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='123' h='12476' id='23' is-fixed='true' name='Duration ' show-title='false' w='10702' x='41784' y='19429'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='123' h='12476' id='25' is-fixed='true' name='US Viewers' show-title='false' w='9620' x='52486' y='19429'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='31333' id='6' is-fixed='true' name='Episodes By Season' w='30811' x='432' y='31905'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='31333' id='11' is-fixed='true' is-scaled='1' param='Image/Walter_White_Breaking_Bad.jpg' type-v2='bitmap' w='30863' x='31243' y='31905'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='31333' id='9' is-fixed='true' name='IMDB Rating By Season' w='37462' x='62106' y='31905'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='36000' id='5' is-fixed='true' name='Directors' w='30811' x='432' y='63238'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='36000' id='10' is-fixed='true' name='Episodes By Season &amp; Minutes' w='30863' x='31243' y='63238'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='36000' id='3' is-fixed='true' name='U.S. Viewers By Year (millions)' w='37462' x='62106' y='63238'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{65BC51D0-5BCD-421A-B44A-5C98211F42E0}' />
+    </dashboard>
+  </dashboards>
+  <windows show-side-pane='false' source-height='37'>
+    <window class='worksheet' name='U.S. Viewers By Year (millions)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[yr:Release date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{DB6C147D-FECB-4721-8D12-EFD77D4634D5}' />
+    </window>
+    <window class='worksheet' name='Directors'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Director:nk]</field>
+            <field>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Episode:ok]</field>
+            <field>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[yr:Release date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A8395C98-57E0-42E0-8469-79E346D3E1BF}' />
+    </window>
+    <window class='worksheet' name='Episodes By Season'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Director:nk]</field>
+            <field>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Episode:ok]</field>
+            <field>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Season:ok]</field>
+            <field>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[yr:Release date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{1BFEDC22-ED47-4B5A-BED4-3DBB3BA7B48A}' />
+    </window>
+    <window class='worksheet' name='IMDB Rating By Season'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Director:nk]</field>
+            <field>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Episode:ok]</field>
+            <field>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Season:ok]</field>
+            <field>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[yr:Release date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{8B2FC892-23FC-44F8-BABF-8729E1550A76}' />
+    </window>
+    <window class='worksheet' name='Episodes By Season &amp; Minutes'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[clct:Calculation_998673226766475264:nk]</field>
+            <field>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Calculation_998673226769399809:nk]</field>
+            <field>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Director:nk]</field>
+            <field>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Episode:ok]</field>
+            <field>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Season:ok]</field>
+            <field>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[yr:Release date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{391B6CE5-6048-45A8-B484-3C39A18C8504}' />
+    </window>
+    <window class='worksheet' name='Description'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[clct:Calculation_998673226766475264:nk]</field>
+            <field>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Calculation_998673226769399809:nk]</field>
+            <field>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Calculation_998673226770944002:nk]</field>
+            <field>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Director:nk]</field>
+            <field>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Episode:ok]</field>
+            <field>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[yr:Release date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{5428AE55-C8A4-4817-B806-E6FF0086F20C}' />
+    </window>
+    <window class='worksheet' name='Season'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Title:nk]' show-all='false' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Director:nk]</field>
+            <field>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Episode:ok]</field>
+            <field>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Season:ok]</field>
+            <field>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Title:nk]</field>
+            <field>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[yr:Release date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{C163D316-CADF-417F-A2FD-C58644D58CB6}' />
+    </window>
+    <window class='worksheet' name='Episode'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Title:nk]' show-all='false' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Director:nk]</field>
+            <field>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Episode:ok]</field>
+            <field>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Season:ok]</field>
+            <field>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Title:nk]</field>
+            <field>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[yr:Release date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{4E142B66-82F4-4D16-BF00-E767B0829DBA}' />
+    </window>
+    <window class='worksheet' name='IMDB Rating'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Title:nk]' show-all='false' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Director:nk]</field>
+            <field>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Episode:ok]</field>
+            <field>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Season:ok]</field>
+            <field>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Title:nk]</field>
+            <field>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[yr:Release date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{05729833-7732-455A-9B5E-0383B9B373B3}' />
+    </window>
+    <window class='worksheet' name='Release Date'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Title:nk]' show-all='false' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Director:nk]</field>
+            <field>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Episode:ok]</field>
+            <field>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Season:ok]</field>
+            <field>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Title:nk]</field>
+            <field>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[yr:Release date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{631CB36D-4E51-4883-90DC-8C620EEADD39}' />
+    </window>
+    <window class='worksheet' name='Duration '>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Title:nk]' show-all='false' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Director:nk]</field>
+            <field>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Episode:ok]</field>
+            <field>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Season:ok]</field>
+            <field>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Title:nk]</field>
+            <field>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[yr:Release date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{19651370-DD41-4B76-B528-53D6707AC829}' />
+    </window>
+    <window class='worksheet' name='US Viewers'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Title:nk]' show-all='false' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Director:nk]</field>
+            <field>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Episode:ok]</field>
+            <field>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Season:ok]</field>
+            <field>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[none:Title:nk]</field>
+            <field>[federated.19y320q1cnpeeu1dqfu3215r1h2x].[yr:Release date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{4FD66529-DC7D-4EC8-932A-29E58BFEFA02}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Breaking Bad Viewership'>
+      <viewpoints>
+        <viewpoint name='Description'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Directors'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Duration '>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Episode'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Episodes By Season'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Episodes By Season &amp; Minutes'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='IMDB Rating'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='IMDB Rating By Season'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Release Date'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Season'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='U.S. Viewers By Year (millions)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='US Viewers'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='16' />
+      <simple-id uuid='{8E2B1DC4-2C40-4167-99EC-0A85F7397A7C}' />
+    </window>
+  </windows>
+</workbook>
